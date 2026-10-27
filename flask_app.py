@@ -13,7 +13,12 @@ def presentation():
 @app.get("/bonjour/<prenom>")
 def bonjour(prenom):
     return f"<h1>Bonjour {prenom} !</h1>"
-
+    
+@app.get("/calcul")
+def calcul():
+    a = int(request.args.get("a", 0))
+    b = int(request.args.get("b", 0))
+    return f"{a} + {b} = {a + b}"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
