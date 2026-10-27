@@ -28,7 +28,8 @@ def salut():
 @app.get("/home")
 def home():
     return redirect("/")
-    @app.get("/moi")
+
+@app.get("/moi")
 def moi():
     return render_template(
         "moi.html",
