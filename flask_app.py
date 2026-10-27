@@ -1,4 +1,4 @@
-# ---------------------------------------------------------------
+return "Bienvenue sur le site de Léa 🚀"---------------------------------------------------------------
 #  Mon premier site Web avec Flask
 # ---------------------------------------------------------------
 #  Ce fichier est le "cerveau" de votre site : c'est lui qui
