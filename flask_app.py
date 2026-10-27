@@ -11,6 +11,10 @@ def accueil():
 def presentation():
     return render_template("presentation.html", prenom="Léa", nom="Martin")
 
+@app.get("/bonjour/<prenom>")
+def bonjour(prenom):
+    return f"<h1>Bonjour {prenom} !</h1>"
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
