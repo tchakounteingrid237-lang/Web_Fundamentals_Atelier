@@ -5,8 +5,7 @@ app = Flask(__name__)
 
 @app.get("/")
 def accueil():
-    return "Bonjour tchakounte ! Essaie /presentation"
-
+    return render_template("accueil.html")
 
 @app.get("/presentation")
 def presentation():
