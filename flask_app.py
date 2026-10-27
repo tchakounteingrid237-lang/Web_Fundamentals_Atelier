@@ -13,6 +13,16 @@ def presentation():
 @app.get("/bonjour/<prenom>")
 def bonjour(prenom):
     return f"<h1>Bonjour {prenom} !</h1>"
+   @app.get("/formulaire")
+def formulaire():
+    return render_template("formulaire.html")
+
+
+@app.get("/salut")
+def salut():
+    prenom = request.args.get("prenom", "inconnu")
+    ville = request.args.get("ville", "nulle part")
+    return f"Bonjour {prenom}, qui vient de {ville} !" 
     
 @app.get("/calcul")
 def calcul():
