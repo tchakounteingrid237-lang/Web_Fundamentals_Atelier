@@ -13,7 +13,8 @@ def presentation():
 @app.get("/bonjour/<prenom>")
 def bonjour(prenom):
     return f"<h1>Bonjour {prenom} !</h1>"
-   @app.get("/formulaire")
+    
+@app.get("/formulaire")
 def formulaire():
     return render_template("formulaire.html")
 
